@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Bar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Coffee Bar
+        </div>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#products">Products</a></li>
+
+
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="left">
+
+            <h1>
+
+                Enjoy The Most
+
+                <span>Delicious Coffee</span>
+
+            </h1>
+
+            <p>
+
+                Start your day with premium coffee crafted to energize your mornings,
+                delight your senses and make every sip unforgettable.
+
+            </p>
+
+            <div class="buttons">
+
+                <a href="#products" class="btn1">
+                    Explore →
+                </a>
+
+                <a href="#" class="btn2" id="openModal">
+                    Order Coffee
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <img src="download__6_-removebg-preview.png" alt="Coffee">
+
+            <div class="rating rating1">
+
+
+                <p>Coffee with cat is love</p>
+
+            </div>
+
+            <div class="rating rating2">
+
+                ★★★★★
+
+                <p>Top Rated Bar</p>
+
+            </div>
+
+        </div>
+    
+        
+    </section>
+    
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <h3>Fuel for Humans</h3>
+            <p>Built for early mornings, late nights, creative minds, 
+                and people who insist they "don't need coffee" while 
+                ordering their third cup. We craft every drink with precision, 
+                quality, and enough caffeine to make Mondays slightly more tolerable.</p>
+        </div>
+    </section>
+    <section class="products" id="products">
+
+        <div class="card">
+
+            <img src="download (7).jpg" alt="Americano">
+
+            <h3>Americano</h3>
+
+            <p>
+                A delicious espresso mixed with ice for a rich
+                and smooth coffee experience.
+            </p>
+
+            <div class="bottom">
+
+                <span>★★★★★</span>
+
+        
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="Sumatran Black Coffee.jpg" alt="Black Coffee">
+
+            <h3>Black Coffee</h3>
+
+            <p>
+                Strong freshly brewed coffee with no milk,
+                perfect for bold coffee lovers.
+            </p>
+
+            <div class="bottom">
+
+                <span>★★★</span>
+
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="H O N E Y_ Photo.jpg" alt="Mocha">
+
+            <h3>Mocha</h3>
+
+            <p>
+                Chocolate flavored espresso blended with creamy milk
+                for a sweet coffee delight.
+            </p>
+
+            <div class="bottom">
+
+                <span>★★★★★</span>
+
+            
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="Breve.jpg" alt="Breve">
+
+            <h3>Breve</h3>
+
+            <p>
+                Rich creamy espresso drink made with steamed
+                half-and-half for extra smoothness.
+            </p>
+
+            <div class="bottom">
+
+                <span>★★★★</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<div class="order-modal" id="orderModal">
+
+    <div class="order-box">
+
+        <span class="close">&times;</span>
+
+        <h2>☕ Order Coffee</h2>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="text" placeholder="Table No." required>
+            <select>
+                <option>Choose Coffee</option>
+                <option>Americano</option>
+                <option>Black Coffee</option>
+                <option>Mocha</option>
+                <option>Breve</option>
+            </select>
+
+            <div class="size">
+
+                <label>
+                    <input type="radio" name="size" checked>
+                    Small
+                </label>
+
+                <label>
+                    <input type="radio" name="size">
+                    Medium
+                </label>
+
+                <label>
+                    <input type="radio" name="size">
+                    Large
+                </label>
+
+            </div>
+
+            <div class="quantity">
+
+                <button type="button" id="minus">−</button>
+
+                <span id="count">1</span>
+
+                <button type="button" id="plus">+</button>
+
+            </div>
+
+            <textarea placeholder="Special Instructions"></textarea>
+
+            <button class="place-btn">
+                Place Order →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+   
+    <footer>
+
+        <p>
+            ˙✧˖°☕ ༘ ⋆｡˚ Made by Trisha ˙✧˖°☕ ༘ ⋆｡˚
+        </p>
+
+    </footer>
+
+   
+
+</body>
+
+</html>
